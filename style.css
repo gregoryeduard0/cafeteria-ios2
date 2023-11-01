@@ -1,0 +1,155 @@
+@charset "utf-8";
+@font-face {
+    font-family: fonte1;
+    src: url(./fontes/Cakecafe.otf);
+}
+
+header h1 {
+    font-family: fonte1;
+    /* text-align: center; */
+    margin-top: 50px;
+}
+
+h1 span {
+    color: #704300;
+}
+
+header img{
+    margin-top: -100px;
+    width: 150px;
+    height: 100px;
+    margin-left: 230px;
+}
+
+
+
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+position: absolute;  
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);  
+margin-top: 5%;
+background-color: #522700;
+}
+
+.imagem img{
+width: 100%;
+height: 100%;
+}
+
+.navegacao{
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translate(-50%);
+display: flex;
+}
+
+
+.bar{
+    background-color: #522700;
+    width: 30px;
+height: 5px;
+margin: 6px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.bar:hover{
+    background-color: #8a4900;
+}
+
+input{
+    display: none;
+}
+
+.imagens{
+    display: flex;
+height: 100%;
+width: 600%;
+}
+
+.imagem{
+    width: 16.6666666667%;
+    transition: 0.5s;
+}
+
+#imagem1:checked ~ .img1{
+    margin-left: 0;
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -33.3333333333%;
+}
+
+#imagem4:checked ~ .img1{
+margin-left: -50%;
+}
+
+#imagem5:checked ~ .img1{
+margin-left: -66.6666666667%;
+}
+
+#imagem6:checked ~ .img1{
+margin-left: -83.3333333333%;
+}
+
+.galeria {
+    display: flex;
+    height: 20em;
+    margin-top: 50%;
+    gap: 0.5em;
+}
+
+.galeria div {
+    flex: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    transition: all 0.8s cubic-bezier(2.165, 0.84, 0.44, 1);
+}
+
+.galeria div:hover{
+    flex: 4;
+}
+
+.galeria:hover div:not(:hover){
+    filter: blur(3px);
+    filter: grayscale(1) grayscale(100%) opacity( 50%);
+}
+ footer{
+    background-color: #5f460094;
+ } 
+
+ p span{
+    color: #704300;
+    font-family: fonte1;
+ }
+
+ footer h1 span{
+    font-family: fonte1;
+ }
+
+ .table{
+    margin-top: 600px;
+    margin-left: 450px;
+    font-size: 20px;
+    background-color: #bd710049;
+ }
+
+ form {
+margin-top: 900px;
+ }
+
+ article{
+    margin-top: -850px;
+    background-color: #8a4a0081;
+ }
+
